@@ -1,10 +1,9 @@
 class Account:
-    def __init__(self, name: str):
+    def __init__(self, name: str) -> None:
         '''
         Sets the default values for each object
 
         :param name: This is the name of the account
-        :return:
         '''
         self.__account_name = name
         self.__account_balance = 0
@@ -43,10 +42,10 @@ class Account:
         '''
         return self.__account_balance
 
-    def get_name(self) -> float:
+    def get_name(self) -> str:
         '''
         Retrieves the name of the account
 
-        :return: Returns the name
+        :return: Returns the string name
         '''
         return self.__account_name
